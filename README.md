@@ -1,2 +1,0 @@
-# Soteriadoxa
-Soteriadoxa concepts
