@@ -16,7 +16,7 @@ let CloseModal = document
   });
 
 // WOW active
-new WOW().init();
+// new WOW().init();
 // const portfolio = fetch("../portfolioData.js")
 //   .then((res) => {
 //     return res.json();
