@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "type": "Residential",
+    "address": "12. Moonshot, Enugu",
+    "image": ["...", "..."]
+  },
+  {
+    "id": 2,
+    "type": "Office",
+    "address": "14. Independence Layout, Enugu",
+    "image": ["...", "..."]
+  },
+  {
+    "id": 3,
+    "type": "Residential",
+    "address": "124. GRA, Enugu",
+    "image": ["...", "..."]
+  }
+]
