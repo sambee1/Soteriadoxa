@@ -62,7 +62,8 @@ const renderPortfolio = function () {
     if (e.id === number) {
       siteType.textContent = e.type;
       siteAddress.textContent = e.address;
-      siteImage.src = e.image;
+      siteImage.src = e.image[0];
+      console.log(e.image[0]);
     }
   });
 };
