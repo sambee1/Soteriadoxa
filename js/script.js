@@ -62,8 +62,9 @@ const renderPortfolio = function () {
     if (e.id === number) {
       siteType.textContent = e.type;
       siteAddress.textContent = e.address;
-      siteImage.src = e.image[0];
-      console.log(e.image[0]);
+      let imageSrc = e.image[0];
+      // console.log(e.image[0]);
+      siteImage.src = `${e.image[0]}`;
     }
   });
 };
@@ -74,15 +75,10 @@ previousBtn.addEventListener("click", function () {
     number--;
   }
   renderPortfolio();
-  console.log(number);
-
-  // if (number === 1) number = 3;
 });
 nextBtn.addEventListener("click", function () {
   if (number <= 4) {
     number++;
   }
   renderPortfolio();
-  // if (number === 3) number = 1;
-  console.log(number);
 });
