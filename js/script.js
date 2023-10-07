@@ -31,25 +31,25 @@ const data = [
     id: 2,
     type: "Residential",
     address: "12. Moonshot, Enugu",
-    image: "../images/pexels-jvalenciazz-jhon-12845907.jpg",
+    image: "./images/pexels-jvalenciazz-jhon-12845907.jpg",
   },
   {
     id: 3,
     type: "Office",
     address: "14. Independence Layout, Enugu",
-    image: "../images/anders-jilden-Sc5RKXLBjGg-unsplash.jpg",
+    image: "./images/anders-jilden-Sc5RKXLBjGg-unsplash.jpg",
   },
   {
     id: 4,
     type: "Residential",
     address: "124. GRA, Enugu",
-    image: "../images/hero-image1.jpg",
+    image: "./images/hero-image1.jpg",
   },
   {
     id: 5,
     type: "Religious",
     address: "38. New Road, Enugu",
-    image: "../images/osman-rana-JcSsu-NF3qo-unsplash.jpg",
+    image: "./images/osman-rana-JcSsu-NF3qo-unsplash.jpg",
   },
 ];
 
@@ -62,9 +62,9 @@ const renderPortfolio = function () {
     if (e.id === number) {
       siteType.textContent = e.type;
       siteAddress.textContent = e.address;
-      // let imageSrc = e.image[0];
       // console.log(e.image[0]);
       siteImage.src = `${e.image}`;
+      // siteImage.innerHTML = "<img src =" + e.image + ">";
     }
   });
 };
