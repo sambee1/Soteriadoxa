@@ -188,12 +188,14 @@ header .menu-list ul li:hover {
     left: 36%;
   }
   .about .about-1 {
-    width: 300px;
+    width: 280px;
     margin: auto;
+    font-size: 13px;
   }
   .about .about-2 {
-    width: 320px;
+    width: 280px;
     margin: auto;
+    font-size: 13px;
   }
 }
 
@@ -303,6 +305,7 @@ header .menu-list ul li:hover {
   margin-top: 40px;
   font-weight: bold;
   position: relative;
+  padding-top: 20px;
 }
 .portfolio-title::before {
   position: absolute;
@@ -505,7 +508,9 @@ footer li:hover {
   footer li {
     font-size: 15px;
   }
-  footer > img {
+  footer img {
     margin-left: 15px;
+    height: 120px;
+    width: 250px;
   }
 }
