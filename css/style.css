@@ -13,6 +13,7 @@ body {
 header {
   display: flex;
   transition: all 0.3s ease-out 0s;
+  /* justify-content: space-around; */
 }
 header nav > img {
   width: 200px;
@@ -22,14 +23,15 @@ header .menu-list ul {
   list-style-type: none;
   text-decoration: none;
   display: flex;
-  margin-left: 60px;
+  justify-content: end;
+  gap: 120px;
   margin-top: 30px;
 }
 .nav-bar {
   transition: all 0.3s ease-out 0s;
 }
 header .menu-list ul li {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: 15px;
   font-weight: bold;
   color: #990011;
@@ -50,6 +52,7 @@ header .menu-list ul li:hover {
   header .menu-list ul {
     margin-left: -70px;
     margin-top: 13px;
+    gap: 10px;
   }
   header .menu-list ul li {
     margin-left: 15px;
@@ -136,7 +139,8 @@ header .menu-list ul li:hover {
   .hero-section {
     height: 300px;
     width: 100% !important;
-    background-color: red;
+    opacity: 0.8;
+    color: #030000;
   }
   .hero-section p {
     padding-top: 100px;
@@ -188,13 +192,13 @@ header .menu-list ul li:hover {
   }
   .about .about-1 {
     width: 280px;
-    margin: auto;
     font-size: 13px;
+    text-align: left;
   }
   .about .about-2 {
     width: 280px;
-    margin: auto;
     font-size: 13px;
+    text-align: left;
   }
 }
 
@@ -211,16 +215,17 @@ header .menu-list ul li:hover {
   /* padding-bottom: 50px; */
   font-weight: bolder;
   position: relative;
+  text-align: center;
 }
 .services-title::after {
   position: absolute;
   content: "";
   height: 3px;
   bottom: -4px;
-  margin: 0 15px;
+  margin: 0 20px;
   background: #c09f80;
   width: 50px;
-  left: 0;
+  left: 45%;
   right: 0;
 }
 .services img {
@@ -239,14 +244,18 @@ header .menu-list ul li:hover {
   .services .row {
     margin-top: 10px;
   }
-  .services .row .div {
-    margin-top: 25px;
+  .services .row div {
+    width: 280px;
+    margin-top: 10px;
   }
   .services img {
     margin-top: 15px;
   }
   .services .row p {
     padding-top: 15px;
+  }
+  .services-title::after {
+    left: 40%;
   }
 }
 
@@ -258,18 +267,18 @@ header .menu-list ul li:hover {
   /* text-align: center; */
   position: relative;
   font-weight: bolder;
-  margin: auto;
+  text-align: center;
   color: #76323f;
 }
-.why-us-title:after {
+.why-us-title::before {
   position: absolute;
   content: "";
   height: 3px;
   bottom: -4px;
-  margin: 0 5px;
+  margin: 0 25px;
   background: #c09f80;
   width: 50px;
-  left: 0;
+  left: 45%;
   right: 0;
 }
 .why-us img {
@@ -278,17 +287,27 @@ header .menu-list ul li:hover {
   margin-top: 50px;
 }
 
-.why-us h5 {
+.why-us h6 {
   margin: 20px 0px;
   font-weight: bold;
+  color: #76323f;
 }
-.why-us p {
+/* .why-us p {
   width: 280px;
-}
+} */
 @media screen and (max-width: 576px) {
   .why-us img {
     width: 280px;
     height: 300px;
+  }
+  .why-us-title {
+    text-align: center;
+  }
+  .why-us-title::before {
+    left: 40%;
+  }
+  .why-us .row div {
+    width: 280px;
   }
 }
 
@@ -300,7 +319,7 @@ header .menu-list ul li:hover {
   color: #76323f;
 }
 .portfolio-title {
-  text-align: left;
+  text-align: center;
   margin-top: 40px;
   font-weight: bold;
   position: relative;
@@ -311,10 +330,10 @@ header .menu-list ul li:hover {
   content: "";
   height: 3px;
   bottom: -4px;
-  margin: 0 15px;
+  margin: 0 25px;
   background: #c09f80;
   width: 50px;
-  left: 0;
+  left: 45%;
   right: 0;
 }
 .portfolio-images > img {
@@ -365,8 +384,7 @@ header .menu-list ul li:hover {
   }
   .portfolio .site-type {
     margin-top: 20px;
-    font-size: 25px;
-    margin-left: 35px;
+    font-size: 15px;
   }
   .portfolio-images > img {
     height: 230px;
@@ -463,8 +481,6 @@ header .menu-list ul li:hover {
 /* Footer */
 footer {
   height: 300px;
-  /* background-color: #1e1f26; */
-  /* background-color: #011835; */
   background-color: #76323f;
   color: #fcf6f5;
   padding-top: 40px;
@@ -472,13 +488,18 @@ footer {
 }
 footer p {
   margin-left: 25px;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: bold;
 }
-
+footer img {
+  height: 120px;
+  width: 250px;
+}
 footer li {
   margin-top: 20px;
   list-style-type: none;
   cursor: pointer;
+  font-size: 15px;
 }
 footer li:hover {
   color: #565656;
@@ -496,6 +517,7 @@ footer li:hover {
 .socials svg:hover {
   color: #565656;
 }
+
 @media screen and (max-width: 576px) {
   footer {
     height: auto;
@@ -511,5 +533,11 @@ footer li:hover {
     margin-left: 15px;
     height: 120px;
     width: 250px;
+  }
+  footer .row div {
+    width: 260px;
+  }
+  footer .row div p {
+    text-align: center;
   }
 }
