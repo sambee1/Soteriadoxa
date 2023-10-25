@@ -98,7 +98,7 @@ header .menu-list ul li:hover {
 }
 @media screen and (max-width: 576px) {
   .contact-modal {
-    width: 75%;
+    width: 75% !important;
     margin-top: 70px;
     left: 10%;
     height: 300px;
@@ -187,7 +187,7 @@ header .menu-list ul li:hover {
 
 @media screen and (max-width: 576px) {
   .about-title::after {
-    margin: 0 20px;
+    margin: 0 25px;
     left: 36%;
   }
   .about .about-1,
@@ -301,6 +301,7 @@ header .menu-list ul li:hover {
   }
   .why-us-title::before {
     left: 40%;
+    margin: 0 10px;
   }
   .why-us .row div {
     width: 280px;
@@ -390,6 +391,10 @@ header .menu-list ul li:hover {
   .portfolio-images > img:hover {
     height: 250px;
     width: 310px;
+  }
+  .portfolio-title::before {
+    margin: 0 15px;
+    left: 40%;
   }
 }
 /* Testimonials */
@@ -531,8 +536,5 @@ footer li:hover {
   }
   footer .row div {
     width: 260px;
-  }
-  footer .row div p {
-    /* text-align: center; */
   }
 }
